@@ -1,0 +1,119 @@
+/* 新規登録エリア */
+.create-box {
+    max-width: 1000px;
+    border: 1px solid rgb(241, 241, 241);
+    margin: 0 auto;
+}
+
+/* 新規登録：ヘッダー */
+.create-header {
+    padding: 15px 15px 15px 35px;
+    font-size: 23px;
+    font-weight: 700;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+}
+
+/* 入力エリア */
+.create-detail {
+    max-width: 650px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.create-detail div {
+    display: flex;
+    padding-bottom: 15px;
+    width: 100%;
+    gap: 35px;
+}
+
+.create-detail div input,
+.create-detail div select {
+    width: 195px;
+    border-color: #cecfd1;
+}
+
+.create-detail div textarea {
+    width: 400px;
+    height: 150px;
+    border-color: #cecfd1;
+}
+
+.create-detail label {
+    width: 25%;
+    text-align: right;
+}
+
+.opacity-option {
+    color: #999; /* 色を薄くする（お好みで調整） */
+    opacity: 0.7; /* オプションの透明度を50%にする */
+}
+
+/* 新規登録：ボタンエリア */
+.create-bottom {
+    max-width: 650px;
+    text-align: center;
+    margin: 20px 0 35px 125px;
+}
+
+.create-bottom a {
+    font-size: 18px;
+    padding: 7px 35px;
+    background-color: #6e747e;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.create-bottom button {
+    margin-right: 30px;
+    font-size: 18px;
+    padding: 5px 25px;
+    background-color: #368fde;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+/* カレンダー全体のスタイル */
+.datepicker-dropdown {
+    width: 280px; /* カレンダーの幅 */
+    font-size: 14px; /* テキストのサイズ */
+    border: 1px solid #ddd; /* 枠線のスタイル */
+}
+
+/* ヘッダーの月・年の部分 */
+.datepicker-switch {
+    background-color: #343a40; /* ヘッダーの背景色（ダークグレー） */
+    color: #fff; /* テキストの色（白） */
+    padding: 8px; /* ヘッダーのパディング */
+    font-weight: bold; /* テキストを太字に */
+    text-align: center; /* テキストを中央揃え */
+}
+
+/* 矢印のスタイル */
+.prev, .next {
+    color: #007bff; /* 矢印の色（青） */
+    font-size: 18px; /* 矢印の大きさ */
+    cursor: pointer; /* マウスオーバー時にポインターに変更 */
+}
+
+/* 日付のスタイル */
+.day {
+    border-radius: 50%; /* 日付のボタンを丸くする */
+    padding: 10px; /* 日付のボタンの余白 */
+    background-color: #f8f9fa; /* 日付のボタンの背景色 */
+}
+
+/* 今日の日付 */
+.today {
+    background-color: #ffeb3b; /* 今日の日付の背景色（黄色） */
+    font-weight: bold; /* 今日の日付を太字に */
+}
+
+/* 選択された日付 */
+.day.active {
+    background-color: #28a745; /* 選択された日付の背景色（緑） */
+    color: white; /* 選択された日付のテキストカラー（白） */
+}

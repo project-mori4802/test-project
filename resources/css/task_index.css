@@ -1,0 +1,111 @@
+/* 検索エリア */
+.container {
+    border: 1px solid #80808061;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* タスクエリア */
+.task-container {
+    width: 100%;
+}
+
+/* 全表示エリア */
+.todo-list {
+    max-width: 450px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f7f4;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.todo-list .list-header h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4f4848;
+    margin-left: 5px;
+    line-height: 1.5;
+}
+
+.todo-list .list-header a {
+    font-size: 50px;
+    height: 0px;
+    line-height: 0;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.todo-list button i {
+    margin-right: 5px;
+}
+
+.todo-list .btn-outline-primary {
+    width: 100%;
+}
+
+.list-item-box {
+    margin-top: 15px;
+    max-height: 400px; /* 高さを設定（必要に応じて調整） */
+    overflow-y: auto;  /* 縦方向のオーバーフローを自動で処理 */
+    border: 1px solid #ccc; /* オプション: 境界線を追加 */
+    border-radius: 5px;    /* オプション: 角を丸くする */
+}
+
+.list-items {
+    margin-bottom: 15px;
+    border: 1px solid #e6e5e3;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 10px 15px;
+}
+
+.item-header,
+.item-detail div:nth-child(1),
+.item-detail div:nth-child(2),
+.item-detail div:nth-child(3) {
+    width: 100%;
+    display: flex;
+}
+
+.item-header {
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.item-header p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #393939;
+}
+
+.item-header a {
+    height: 0;
+    font-size: 40px;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.todo-list .item-detail label {
+    margin-bottom: 0;
+}
+
+.item-detail div:nth-child(1) p {
+    width: 85%; /* 要素の幅を指定 */
+    white-space: nowrap; /* テキストの折り返しを防ぐ */
+    overflow: hidden; /* はみ出た部分を隠す */
+    text-overflow: ellipsis; /* 溢れた部分を省略記号(...)にする */
+}
+
+.item-detail div {
+    padding-bottom: 5px;
+}
+
+.item-detail div p {
+    margin-left: 8px;
+}
