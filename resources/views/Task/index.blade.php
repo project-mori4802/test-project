@@ -85,7 +85,6 @@
                             @endif
                         </div>
                     </div>
-                    
                     <!-- フラッシュメッセージを隠れた要素として追加 -->
                     @if (session('success'))
                         <div id="success-message" style="display: none;">{{ session('success') }}</div>
